@@ -1,0 +1,95 @@
+.header {
+    margin: 35px 60px 35px 60px;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+.instructions {
+    margin: 20px 60px 20px 60px;
+    padding: 15px 15px 15px 15px;
+    border: 5px solid white; 
+    font-size: 25px;
+    font-family: 'Underdog', cursive;
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(teal, blue);
+}
+
+.targetScore {
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+    padding: 15px 15px 15px 15px;
+    background-color: yellowgreen;
+    border: 5px solid black;
+    font-size: 25px;
+    font-family: 'Underdog', cursive;
+    text-decoration: underline;
+    text-align: center;
+    float: left;
+}
+
+#target {
+    font-size: 35px;
+    font-weight: bolder;
+    display: block;
+}
+
+.WinsLosses {
+    font-size: 25px;
+    font-family: 'Underdog', cursive;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+    width: 150px;
+    height: 200px;
+    padding: 15px 15px 15px 15px;
+    margin-left: 15px;
+    border: 10px double black;
+    background-color: lightseagreen;
+    float: left;
+}
+
+#gameWins {
+    font-size: 35px;
+    font-weight: bolder;
+    display: block;
+}
+
+#gameLosses {
+    font-size: 35px;
+    font-weight: bolder;
+    display: block;
+}
+
+.buttons {
+    display: block;
+    margin: 15px 50px 15px 90px;
+    float: left
+}
+
+.userScore {
+    width: 365px;
+    height: 200px;
+    margin-left: 60px;
+    margin-top: -50px;
+    padding: 15px 15px 15px 15px;
+    background-color: royalblue;
+    color: white;
+    border: 5px solid black;
+    font-size: 25px;
+    font-family: 'Underdog', cursive;
+    text-decoration: underline;
+    text-align: center;
+    float: left;
+}
+
+#userScore {
+    font-size: 35px;
+    font-weight: bolder;
+    display: block;
+}

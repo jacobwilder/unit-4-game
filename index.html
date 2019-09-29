@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Underdog&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/images/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="instructions">
+        <ol>
+            <li>A random target number will be generated at the start of the game.</li>
+            <br>
+            <li>There are four crystals below. Clicking one will add a specific point value to your total score.</li>
+            <br>
+            <li>You win the game if your total score matches the random target number. You lose the game if your total score goes above the random target number.</li>
+            <br>
+            <li>The value of each crystal is hidden until it is clicked.</li>
+            <br>
+            <li>Each time the game starts, the values of each crystal will change.</li>
+        </ol>
+    </div>
+    <div class="targetScore">
+        <h2>Target: 
+            <span id="target"></span>
+        </h2>
+    </div>
+    <div class="WinsLosses">
+        <h2 id="wins">Wins:
+            <br>
+            <span id="gameWins"></span>
+        </h2>
+        <br>
+        <h2 id="losses">Losses:
+            <br>
+            <span id="gameLosses"></span>
+        </h2>
+    </div>
+    <div class="buttons">
+        <img src="assets/images/Gem-BLUE.png" class="gemImg" id="blue" alt="Blue Gem">
+        <img src="assets/images/Gem-RED.png" class="gemImg" id="red" alt="Red Gem">
+        <img src="assets/images/Gem-GREEN.png" class="gemImg" id="green" alt="Green Gem">
+        <img src="assets/images/Gem-PURPLE.png" class="gemImg" id="purple" alt="Purple Gem">
+    </div>
+    <div class="userScore">
+        <h2>Your Score: 
+            <span id="userScore"></span>
+        </h2>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
