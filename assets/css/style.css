@@ -68,8 +68,24 @@
 
 .buttons {
     display: block;
-    margin: 15px 50px 15px 90px;
+    margin-left: 15px;
     float: left
+}
+
+#red {
+    border: 10px double black;
+}
+
+#blue {
+    border: 10px double black;
+}
+
+#green {
+    border: 10px double black;
+}
+
+#purple {
+    border: 10px double black;
 }
 
 .userScore {
