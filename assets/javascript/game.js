@@ -36,19 +36,21 @@ $(document).ready(function() {
     //win function
     function winner() {
         alert("You're a winner!");
+        reset();
         wins++;
         console.log("Wins: " + wins);
         $("#gameWins").text(wins);
-        reset();
+        
     }
 
     //loss function
     function loser() {
         alert("You lose! Try again!");
+        reset();
         losses++;
         console.log("Losses: " + losses);
-        $("#gameLosses").text(wins);
-        reset();
+        $("#gameLosses").text(losses);
+        
     }
 
     //click listeners on buttons
@@ -78,16 +80,20 @@ $(document).ready(function() {
         }
     })
 
-    $("#green").on("click", function(){
+    $(".gemImg").on("click", function(){
         userScore = userScore + greenGem;
         console.log("New user score: " + userScore);
         $("#userScore").text(userScore);
         
         if (userScore == target) {
             winner();
+            $("#userScore").text(userScore);
+
         }
         else if (userScore > target) {
             loser();
+            $("#userScore").text(userScore);
+
         }
     })
 
@@ -97,10 +103,22 @@ $(document).ready(function() {
         $("#userScore").text(userScore);
         
         if (userScore == target) {
-            winner();
+         winner();
         }
         else if (userScore > target) {
-            loser();
+         loser();
         }
-    })
+})
+
+// $(".gemImg").on("click", function(){
+//     userScore = userScore + blueGem;
+//     console.log("New user score: " + userScore);
+//     $("#userScore").text(userScore);
+    
+//     if (userScore == target) {
+//         winner();
+//     }
+//     else if (userScore > target) {
+//         loser();
+//     }
 })
