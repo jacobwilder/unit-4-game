@@ -16,17 +16,22 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
 
-    //prints wins and losses to respective headers
+    //prints wins, losses, and user score to respective headers
+    $("#userScore").text(userScore);
     $("#gameWins").text(wins);
     $("#gameLosses").text(losses);
+    
 
     //resets variables
     function reset() {
         target = Math.floor(Math.random()*101+19);
         userScore = 0;
-        console.log("target number: " + target);
+        $("#userScore").text(userScore);
         $("#targetnumber").text(target);
-        
+        console.log("target number: " + target);
+        console.log("user Score: " + userScore);
+
+
         blueGem = Math.floor(Math.random()*11+1);
         redGem = Math.floor(Math.random()*11+1);
         greenGem = Math.floor(Math.random()*11+1);
@@ -80,7 +85,7 @@ $(document).ready(function() {
         }
     })
 
-    $(".gemImg").on("click", function(){
+    $("#green").on("click", function(){
         userScore = userScore + greenGem;
         console.log("New user score: " + userScore);
         $("#userScore").text(userScore);
@@ -109,16 +114,4 @@ $(document).ready(function() {
          loser();
         }
 })
-
-// $(".gemImg").on("click", function(){
-//     userScore = userScore + blueGem;
-//     console.log("New user score: " + userScore);
-//     $("#userScore").text(userScore);
-    
-//     if (userScore == target) {
-//         winner();
-//     }
-//     else if (userScore > target) {
-//         loser();
-//     }
 })
